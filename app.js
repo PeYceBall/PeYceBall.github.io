@@ -4,6 +4,9 @@ var li = document.createElement("li");
 li.appendChild(document.createElement("span").appendChild(document.createTextNode("Сделать задание #3 по web-программированию")));
 var button = document.createElement("button");
 button.appendChild(document.createTextNode("Удалить"));
+button.addEventListener('click', function(){
+	ul.removeChild(li);
+});
 li.appendChild(button);
 
 var input = document.createElement("input");
@@ -24,10 +27,6 @@ addbutton.addEventListener('click', function(){
 
 	newli.appendChild(newbutton);
 	ul.appendChild(newli);	
-});
-
-button.addEventListener('click', function(){
-	ul.removeChild(li);
 });
 
 ul.appendChild(li);
