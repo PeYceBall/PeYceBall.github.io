@@ -7,8 +7,7 @@ button.appendChild(document.createTextNode("Удалить"));
 button.addEventListener('click', function(){
 	ul.removeChild(li);
 });
-li.appendChild(button);
-ul.appendChild(li);
+
 
 
 
@@ -32,6 +31,8 @@ addbutton.addEventListener('click', function(){
 	ul.appendChild(newli);	
 });
 
+li.appendChild(button);
+ul.appendChild(li);
 root.appendChild(ul);
 root.appendChild(input);
 root.appendChild(addbutton);
