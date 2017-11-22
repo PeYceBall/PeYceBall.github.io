@@ -1,7 +1,7 @@
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
 var li = document.createElement("li");
-li.appendChild(document.createTextNode("Сделать задание #3 по web-программированию"));
+li.appendChild(document.createElement("span").appendChild(document.createTextNode("Сделать задание #3 по web-программированию")));
 var button = document.createElement("button");
 button.appendChild(document.createTextNode("Удалить"));
 li.appendChild(button);
