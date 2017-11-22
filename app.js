@@ -1,4 +1,3 @@
-alert("LUL");
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
 var li = document.createElement("li");
