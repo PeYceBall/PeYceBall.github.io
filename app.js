@@ -15,7 +15,7 @@ addbutton.appendChild(document.createTextNode("Add"));
 addbutton.addEventListener('click', function(){
 	
 	var newli = document.createElement("li");
-	newli.appendChild(document.createTextNode(input.value));
+	newli.appendChild(document.createElement("span").appendChild(document.createTextNode(input.value)));
 	var newbutton = document.createElement("button");	
 	newbutton.appendChild(document.createTextNode("Удалить"));
 	newbutton.addEventListener('click', function(){
