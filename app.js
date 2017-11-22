@@ -1,7 +1,9 @@
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
 var li = document.createElement("li");
-li.appendChild(document.createElement("span").appendChild(document.createTextNode("Сделать задание #3 по web-программированию")));
+var span = document.createElement("span")
+span.appendChild(document.createTextNode("Сделать задание #3 по web-программированию"));
+li.appendChild(span);
 var button = document.createElement("button");
 button.appendChild(document.createTextNode("Удалить"));
 button.addEventListener('click', function(){
@@ -22,7 +24,9 @@ addbutton.appendChild(document.createTextNode("Add"));
 addbutton.addEventListener('click', function(){
 	
 	var newli = document.createElement("li");
-	newli.appendChild(document.createElement("span").appendChild(document.createTextNode(input.value)));
+	var newspan = document.createElement("span");
+	newspan.appendChild(document.createTextNode(input.value));
+	newli.appendChild(newspan);
 	var newbutton = document.createElement("button");	
 	newbutton.appendChild(document.createTextNode("Удалить"));
 	newbutton.addEventListener('click', function(){
