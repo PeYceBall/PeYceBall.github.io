@@ -1,9 +1,9 @@
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
 var li = document.createElement("li");
-li.appendChild(document.createTextNode("Сделать задание #3 по web-программированию"));
+li.appendChild(document.createTextNode("РЎРґРµР»Р°С‚СЊ Р·Р°РґР°РЅРёРµ #3 РїРѕ web-РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЋ"));
 var button = document.createElement("button");
-button.appendChild(document.createTextNode("Delete"));
+button.appendChild(document.createTextNode("РЈРґР°Р»РёС‚СЊ"));
 li.appendChild(button);
 
 var input = document.createElement("input");
@@ -17,7 +17,7 @@ addbutton.addEventListener('click', function(){
 	var newli = document.createElement("li");
 	newli.appendChild(document.createTextNode(input.value));
 	var newbutton = document.createElement("button");	
-	newbutton.appendChild(document.createTextNode("Delete"));
+	newbutton.appendChild(document.createTextNode("РЈРґР°Р»РёС‚СЊ"));
 	newbutton.addEventListener('click', function(){
 		ul.removeChild(newli);
 	});
