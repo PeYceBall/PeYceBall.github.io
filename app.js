@@ -8,7 +8,7 @@ button.addEventListener('click', function(){
 	ul.removeChild(li);
 });
 
-
+ 
 li.appendChild(button);
 ul.appendChild(li);
 root.appendChild(ul);
