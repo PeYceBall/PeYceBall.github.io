@@ -12,7 +12,7 @@ button.addEventListener('click', function(){
 li.appendChild(button);
 ul.appendChild(li);
 root.appendChild(ul);
-alert("LUL");
+
 var input = document.createElement("input");
 input.setAttribute("id", "add_task_input");
 var addbutton = document.createElement("button");
